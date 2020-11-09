@@ -38,7 +38,6 @@ def draw_rectangle_on_faces(image, faces):
 def main():
     image = get_image_from_webcam()
     faces = get_faces_from_image(image)
-    print(faces)
     faces_amount = f"Faces found: {len(faces)}"
     draw_rectangle_on_faces(image, faces)
     view_image(image, faces_amount)
